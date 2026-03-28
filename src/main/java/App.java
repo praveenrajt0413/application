@@ -12,7 +12,7 @@ public class App {
 
     @GetMapping("/")
     public String home() {
-        return "Hello DevOps on 8081!";
+        return "Hello DevOps on 8082!";
     }
 
     // for JUnit testing
