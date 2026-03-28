@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                // To explicitly specify the branch and repository URL:
+                git branch: 'main', url: "https://github.com/praveenrajt0413/application.git"
             }
         }
 
