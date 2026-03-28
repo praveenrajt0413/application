@@ -11,8 +11,7 @@ pipeline {
         stage('Build & Test') {
             steps {
                 echo 'Compiling code and running unit tests...'
-                // If the Jenkinsfile is in the 'application' folder, and the application folder is your repo root,
-                // we don't need the dir('application') block anymore.
+               
                 bat 'mvn clean package'
             }
         }
